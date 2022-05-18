@@ -10,9 +10,8 @@ public class P01_linkText {
     public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
-
         WebDriver driver = new ChromeDriver();
-
+        driver.manage().window().maximize();
         driver.get("https://practice.cydeo.com");
 
         WebElement multiple_buttons = driver.findElement(By.linkText("Multiple Buttons"));
